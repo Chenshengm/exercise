@@ -9,7 +9,6 @@
 #define IOS ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 using namespace std;
 
-typedef pair<int, int> PII;
 const int N = 25;
 const int inf = 0x3f3f3f3f;
 int a[N];
@@ -19,7 +18,7 @@ signed main() {
 	int T;
 	cin >> T;
 	while (T--) {
-		vector<PII> v;
+		vector<pair<int, int>> v;
 		int n, nmax = -inf, dn, nmin = inf, xn, ans = 0;
 		cin >> n;
 		for (int i = 1; i <= n; i++) {
